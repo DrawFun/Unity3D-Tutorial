@@ -1,6 +1,8 @@
+obj/
 Library/
 Temp/
 Builds/
+Debug/
 *.sln
 *.csproj
 *.sln
