@@ -27,7 +27,7 @@ public class Bird : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Ground") {
+		if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "Column") {
 			rb2d.velocity = Vector2.zero;
 			isDead = true;
 			anim.SetTrigger ("Die");
